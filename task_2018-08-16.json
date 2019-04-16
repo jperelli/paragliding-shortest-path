@@ -14,17 +14,6 @@
             "type": "TAKEOFF"
         },
         {
-            "radius": 19500,
-            "waypoint": {
-                "lon": 9.069167137145996,
-                "lat": 46.79033279418945,
-                "altSmoothed": 1900,
-                "name": "S11",
-                "description": "S11190 BRIGELS DELTA"
-            },
-            "type": "SSS"
-        },
-        {
             "radius": 1500,
             "waypoint": {
                 "lon": 9.069167137145996,
@@ -52,16 +41,6 @@
                 "altSmoothed": 2520,
                 "name": "B73",
                 "description": "B73250 LA BUORA"
-            }
-        },
-        {
-            "radius": 40004,
-            "waypoint": {
-                "lon": 9.048666954040527,
-                "lat": 46.72483444213867,
-                "altSmoothed": 2000,
-                "name": "B79",
-                "description": "B79200 VORDER ALP TISCHAL"
             }
         },
         {
