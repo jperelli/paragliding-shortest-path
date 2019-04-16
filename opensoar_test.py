@@ -11,6 +11,7 @@ from shapely.geometry import Point, LineString, GeometryCollection
 from functools import partial
 from shapely.ops import transform
 from shapely_geojson import dumps, Feature, FeatureCollection
+from geographiclib.geodesic import Geodesic
 
 with open('race_task_completed.igc', 'r') as f:
     parsed_igc_file = Reader().read(f)
@@ -138,6 +139,11 @@ for p in pairs:
 
 path = LineString(points) # this is the final result
 
+dist = 0
+geod = Geodesic.WGS84
+for pair in zip(points[::1], points[1::1]):
+    dist = dist + geod.Inverse(pair[0].y, pair[0].x, pair[1].y, pair[1].x)['s12']
+print("DISTANCE (m): ", dist)
 
 # printing results
 circles = [circle(Point(w.longitude, w.latitude), w.r_max) for w in waypoint_list]

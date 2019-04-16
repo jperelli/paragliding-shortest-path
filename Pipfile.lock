@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c0b99d764f6f516afd70a9d84c1cf0b61f5c1435c8a82a4302e136c3b92ada8a"
+            "sha256": "30a406b0b351f6940d6165913df7d3f9e6de99687ce3658c854615c98f695efd"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,13 @@
                 "sha256:ba6d5c59906a85ac23dadfe5c88deaf3e179ef565f4898671253e50a78680718"
             ],
             "version": "==4.7.1"
+        },
+        "geographiclib": {
+            "hashes": [
+                "sha256:635da648fce80a57b81b28875d103dacf7deb12a3f5f7387ba7d39c51e096533"
+            ],
+            "index": "pypi",
+            "version": "==1.49"
         },
         "opensoar": {
             "hashes": [
